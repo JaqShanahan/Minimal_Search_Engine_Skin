@@ -21,24 +21,28 @@
         width: 100%;
         align-items: center;
         align-self: center;
+        margin-top: 50px;
         float: top;
-
-        border-radius: 5px;
+        height: 45px;
+        border-radius: 30px;
         text-align: center;
         flex-direction: row;
         align-items: center;
       }
 
       input {
+        border-radius: 6px;
         text-align: center;
         width: 100px;
+        height: 20px;
         position: relative;
         position: center;
-        font: 20px;
+        font-size: 25px;
         color: black;
         height: 100%;
         width: 100%;
         padding: 6px 10px;
+        font-weight: 600;
       }
 
       ::placeholder {
@@ -60,10 +64,26 @@
         width: 44px;
         height: 44px;
       }
+      img {
+        position: relative;
+        width: 100px;
+        margin-top: 200px;
+      }
+      .center {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
-    <h1 style="text-align: center; margin-top: 90px; font-size: 50px">
+    <div class="center">
+      <img src="images/atom.png" class="img" />
+    </div>
+
+    <h1 style="text-align: center; margin-top: 150px; font-size: 50px">
       Search.
     </h1>
     <h2 style="text-align: center; font-size: 23px; margin-top: -29px">

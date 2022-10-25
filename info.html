@@ -20,36 +20,6 @@
         padding: 20px;
       }
 
-      form {
-        background-color: white;
-        width: 100%;
-        align-items: center;
-        align-self: center;
-        margin-top: 50px;
-        float: top;
-        height: 40px;
-        border-radius: 30px;
-        text-align: center;
-        flex-direction: row;
-        align-items: center;
-      }
-
-      input {
-        border: none;
-        border-radius: 6px;
-        text-align: center;
-        width: 100px;
-        height: 17px;
-        position: relative;
-        position: center;
-        font-size: 18px;
-        color: black;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-        font-weight: 600;
-      }
-
       ::placeholder {
         color: black;
         opacity: 0.7;
@@ -70,9 +40,8 @@
         height: 44px;
       }
       img {
-        position: relative;
         width: 90px;
-        margin-top: 230px;
+        margin-top: 150px;
       }
       .center {
         margin: 0;
@@ -113,12 +82,7 @@
       .nav-link a.active {
         text-decoration: none;
       }
-      h3 {
-        text-align: center;
-        font-weight: 500;
-        opacity: 50%;
-        font-size: 17px;
-      }
+
       p {
         font-weight: 500;
         opacity: 40%;
@@ -130,7 +94,11 @@
         position: absolute;
         bottom: 0px;
       }
-      .fa-info {
+      h4 {
+        font-weight: 500;
+        margin-top: -15px;
+      }
+      .fa-house {
         font-size: 19px;
       }
     </style>
@@ -139,49 +107,30 @@
     <nav class="nav-bar">
       <ul>
         <li class="nav-link">
-          <a href="info.html"><i class="fa-sharp fa-solid fa-info"></i></a>
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
         </li>
       </ul>
     </nav>
-    <div class="center">
-      <img src="images/atom.png" class="img" />
-    </div>
+    <img src="images/atom.png" class="img" />
 
-    <h1 style="text-align: center; margin-top: 150px; font-size: 50px">
-      Search.
-    </h1>
-    <h2 style="text-align: center; font-size: 23px; margin-top: -29px">
+    <h1 style="margin-top: 0px; font-size: 50px">Search.</h1>
+    <h2 style="font-size: 23px; margin-top: -25px; margin-bottom: 35px">
       Welcome to a new way to Search.
     </h2>
-    <form role="search" id="form">
-      <input
-        type="search"
-        id="query"
-        name="q"
-        placeholder="Search..."
-        aria-label="Search through site content"
-        list="suggestions"
-      />
-    </form>
-    <h3>Search without your data being tracked</h3>
+    <h3>About</h3>
+    <h4>
+      This search engine is a skin which utilises
+      <a style="color: black" href="https://duckduckgo.com/">DuckDuckGo</a
+      >internet search engine that emphasizes protecting searchers' privacy and
+      avoiding the filter bubble of personalized search results. <br />
+      <br /><i
+        >This webpage also does not keep any data in any shape or form!</i
+      >
+    </h4>
     <p id="bottom">
       <a style="color: black" href="https://jaq1.netlify.app/siti.html"
         >Shanahan Information and Technology inc.© 2022</a
       >
     </p>
-    <script>
-      const f = document.getElementById("form");
-      const q = document.getElementById("query");
-      const google = "https://duckduckgo.com/?va=j&t=hc&q=";
-
-      function submitted(event) {
-        event.preventDefault();
-        const url = google + q.value;
-        const win = window.open(url, "_blank");
-        win.focus();
-      }
-
-      f.addEventListener("submit", submitted);
-    </script>
   </body>
 </html>
